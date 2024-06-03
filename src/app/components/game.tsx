@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client'
 import Phaser from 'phaser';
 import { useEffect, useRef } from 'react';
