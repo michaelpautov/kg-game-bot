@@ -1,4 +1,6 @@
-import PhaserGame from 'bot/app/components/game';
+import dynamic from 'next/dynamic';
+
+const PhaserGame = dynamic(() => import('./components/game'), { ssr: false });
 
 export default function Home() {
   return (

@@ -7,6 +7,9 @@ const PhaserGame: React.FC = () => {
   const gameRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (typeof window === 'undefined') {
+      return;
+    }
     const config: Phaser.Types.Core.GameConfig = {
       type: Phaser.AUTO,
       scale: {
